@@ -1,0 +1,120 @@
+# es_CL translation by Esophose
+# Plugin Message Prefix
+prefix: ' &5&l☯ Elixir &7‣ &f'
+
+# Currency
+currency-singular: elixir
+currency-plural: elixir
+currency-separator: ','
+currency-decimal: .
+number-abbreviation-thousands: k
+number-abbreviation-millions: m
+number-abbreviation-billions: b
+
+# Misc
+no-permission: '&cNope!'
+no-console: '&cOnly players may execute this command.'
+invalid-amount: '&cEl monto tiene que ser un numero positivo.'
+unknown-player: '&cNo se encontro el jugador: &d%player%'
+unknown-command: '&cUnknown command: &d%input%'
+votifier-voted: '&7Thanks for voting on %service%! &d%amount% &7has been added to your balance.'
+leaderboard-empty-entry: This could be you!
+
+# Base Command Message
+base-command-color: '&f'
+base-command-help: '&7Usa el comando &d/elixir help &7para mas información.'
+
+# Help Command
+command-help-description: '&8 × &d/elixir help &7‣ &fEste mensaje de ayuda.'
+command-help-title: '&7Comandos disponibles:'
+
+# Give Command
+command-give-description: '&8 × &d/elixir give &7‣ &fDar elixir a un jugador.'
+command-give-usage: '&cUsage: &7/elixir give <player> <amount>'
+command-give-success: '&d%player% &awas given &d%amount% &5%currency%.'
+command-give-received: '&7Has recibido &d%amount% &5%currency%&7.'
+
+# Give All Command
+command-giveall-description: '&8 × &d/elixir giveall &7‣ &fDar elixir a todos los jugadores.'
+command-giveall-usage: '&cUsage: &7/elixir giveall <amount> [*]'
+command-giveall-success: '&aHas dado a todos en linea &d%amount% &ade &5%currency%.'
+
+# Take Command
+command-take-description: '&8 × &d/elixir take &7‣ &fQuitar elixir de jugador.'
+command-take-usage: '&cUsage: &7/elixir take <player> <amount>'
+command-take-success: '&7Has quitado un total de &d%amount% &5%currency% a &f%player%&7.'
+command-take-lacking-funds: '&f%player% &cno tiene %currency% suficiente por lo que cambio a 0!'
+
+# Look Command
+command-look-description: '&8 × &d/elixir look &7‣ &fVer elixir de un jugador.'
+command-look-usage: '&cUsage: &7/elixir look <player>'
+command-look-success: '&d%player% &7tiene &d%amount% &7%currency%.'
+
+# Pay Command
+command-pay-description: '&8 × &d/elixir pay &7‣ &fEnviar elixir a un jugador.'
+command-pay-usage: '&cUsage: &7/elixir pay <player> <amount>'
+command-pay-sent: '&aHas enviado &d%amount% &5%currency% &aa &f%player%.'
+command-pay-received: '&f%player% &7te ha enviado &d%amount% &7%currency%&7.'
+command-pay-lacking-funds: '&cNo tienes suficiente %currency% para eso.'
+
+# Set Command
+command-set-description: '&8 × &d/elixir set &7‣ &fCambiar elixir del jugador.'
+command-set-usage: '&cUsage: &7/elixir set <player> <amount>'
+command-set-success: '&aEl %currency% de &f%player% &aahora es &d%amount%&a.'
+
+# Reset Command
+command-reset-description: '&8 × &d/elixir reset &7‣ &fRestablecer elixir del jugador.'
+command-reset-usage: '&cUsage: &7/elixir reset <player>'
+command-reset-success: '&aSe ha restablecido el %currency% para &f%player%&a.'
+
+# Me Command
+command-me-description: '&8 × &d/elixir me &7‣ &fVer tu elixir'
+command-me-usage: '&cUsage: &d/elixir me'
+command-me-success: '&7Tienes un total de &d%amount% &7%currency%.'
+
+# Lead Command
+command-lead-description: '&8 × &d/elixir lead &7‣ &fVer el top.'
+command-lead-usage: '&cUsage: &7/elixir lead [next|prev|#]'
+command-lead-title: '&7Leaderboard &7(Page #%page%/%pages%)'
+command-lead-entry: '&d%position%). &7%player% &7‣ &f&6%amount% %currency%'
+
+# Broadcast Command
+command-broadcast-description: '&8 × &d/elixir broadcast &7‣ &fMostrar a todos la cantidad de elixir de un jugador.'
+command-broadcast-usage: '&cUsage: &7/elixir broadcast <player>'
+command-broadcast-message: '&f%player% &7tiene &d%amount% &7%currency%.'
+
+# Reload Command
+command-reload-description: '&8 × &d/elixir reload &7‣ &fRecarga el plugin.'
+command-reload-usage: '&cUsage: &7/elixir reload'
+command-reload-success: '&aSe recargaron los archivos de configuracion.'
+
+# Export Command
+command-export-description: '&8 × &d/elixir export &7‣ &fExports the data to storage.yml'
+command-export-usage: '&cUsage: &7/elixir export'
+command-export-success: '&aSave data has been exported to storage.yml.'
+command-export-warning: '&cNotice: A storage.yml file already exists. If you would like to overwrite it, use &d/elixir export confirm&c.'
+
+# Import Command
+command-import-description: '&8 × &d/elixir import &7‣ &fImports the data from storage.yml'
+command-import-usage: '&cUsage: &7/elixir import'
+command-import-success: '&aSave data has been imported from storage.yml.'
+command-import-no-backup: '&cUnable to import, storage.yml does not exist. You can generate one with &d/elixir export &cand use it to transfer data between database types.'
+command-import-warning: '&cNotice: This operation will delete all data from the active database and replace it with the contents of storage.yml. &cThe currently active database type is &d&o&l%type%&c. &cIf you are absolutely sure about this, use &d/elixir import confirm&c.'
+
+# Convert Command
+command-convert-description: '&8 × &d/elixir convert &7‣ &fLoads currency data from another plugin'
+command-convert-usage: '&cUsage: &7/elixir convert <plugin>'
+command-convert-invalid: '&d%plugin% &cis not a convertible currency plugin name.'
+command-convert-success: '&aCurrency data from &d%plugin% &ahas been converted.'
+command-convert-failure: '&cAn error occurred while attempting to convert the data. Please check your console and report any errors to the PlayerPoints plugin author.'
+command-convert-warning: '&cNotice: This operation will delete all data from the active database and replace it with the data from &d%plugin%&c. &cIf you are absolutely sure about this, use &d/elixir convert %plugin% confirm&c.'
+
+# Import Legacy Command
+command-importlegacy-description: '&8 × &d/elixir importlegacy &7‣ &fImport a legacy table'
+command-importlegacy-usage: '&cUsage: &7/elixir importlegacy <table>'
+command-importlegacy-success: '&aSuccessfully imported legacy data from &d%table%&a.'
+command-importlegacy-failure: '&cFailed to import legacy data from &d%table%&c. Does the table exist?'
+command-importlegacy-only-mysql: '&cThis command is only available when you have MySQL enabled.'
+
+# Version Command
+command-version-description: '&8 × &d/elixir version &7‣ &fVer versión del plugin'
